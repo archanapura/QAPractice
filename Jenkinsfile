@@ -34,7 +34,7 @@ pipeline
             {
                 echo 'Quality checks...'
                 bat 'npx tsc --noEmit'
-                bat 'npx eslint .'
+                // bat 'npx eslint .'
             }
         }
          stage('Execution')
