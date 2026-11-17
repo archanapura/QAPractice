@@ -48,12 +48,37 @@ pipeline
                 '''
             }
         }
-        stage('Reporting')
-        {
-            steps
-            {
-                echo 'Generating reports...'
-            }
+        
+    }
+
+    post {
+        always {
+
+           
+            // Archive all reports and test artifacts
+            archiveArtifacts(
+                artifacts: 'playwright-report/**, test-results/**',
+                allowEmptyArchive: true
+            )
+
+            // Publish HTML report
+            publishHTML(target: [
+                reportName: 'Playwright HTML Report',
+                reportDir: 'playwright-report',
+                reportFiles: 'index.html',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
+        }
+
+        success {
+            echo 'All automation stages completed successfully!'
+        }
+
+        failure {
+            echo 'Automation execution failed. Check reports for details.'
         }
     }
+
 }
