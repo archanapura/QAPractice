@@ -42,7 +42,10 @@ pipeline
             steps
             {
                 echo 'Executing tests...'
-                bat '$env:UI_BASE_URL_LOCAL="https://www.qapractice.com/"  npx playwright test'
+                bat'''
+                set UI_BASE_URL_LOCAL=https://www.qapractice.com/
+                npx playwright test
+                '''
             }
         }
         stage('Reporting')
