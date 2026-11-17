@@ -9,7 +9,7 @@ pipeline
     parameters {
         // string(name: 'UI_BASE_URL_LOCAL', defaultValue: 'https://www.qapractice.com/', description: 'Base URL for the application under test')
 
-        choice(name: 'UI_BASE_URL_LOCAL', choices: ['https://www.qapractice.com/', 'https://staging.qapractice.com/'], description: 'Base URL for the application under test')
+        choice(name: 'UI_BASE_URL_QA', choices: ['https://www.qapractice.com/', 'https://staging.qapractice.com/'], description: 'Base URL for the application under test')
     }
     options {
         // Set a timeout for the entire pipeline (e.g., 30 minutes)
