@@ -17,7 +17,7 @@ const workers =
   configuredWorkers !== undefined
     ? Number(configuredWorkers)
     : process.env.CI
-      ? 2
+      ? 1
       : undefined;
 
 export default defineConfig({
@@ -56,8 +56,21 @@ export default defineConfig({
   ],
 
   // 4. Test reports
+  // reporter: [
+  //   ["list"],
+  //   ["html", { open: "never" }],
+  // ],
+  outputDir: 'test-results',
+
   reporter: [
-    ["list"],
-    ["html", { open: "never" }],
-  ],
+        ['list'],
+         ['junit', {
+            outputFile: 'test-results/junit.xml'
+        }],
+        ['html', {
+            outputFolder: 'playwright-report',
+            open: 'never'
+        }]
+    ],
+
 });

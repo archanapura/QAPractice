@@ -1,0 +1,10 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.055665">
+<testsuite name="ui\registration.spec.ts" timestamp="2026-11-17T11:06:51.968Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.997" errors="0">
+<testcase name="Register to the application" classname="ui\registration.spec.ts" time="4.997">
+<system-out>
+<![CDATA[Clicked on practice button successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
