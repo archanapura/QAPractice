@@ -44,17 +44,17 @@ export const config = Object.freeze({
 
   uiBaseUrl: requiredUrl(
     `UI_BASE_URL_${suffix}`
-  ),
+  // ),
 
-  apiBaseUrl: requiredUrl(
-    `API_BASE_URL_${suffix}`
-  ),
+  // apiBaseUrl: requiredUrl(
+  //   `API_BASE_URL_${suffix}`
+  // ),
 
-  username: requiredVariable(
-    `TEST_USERNAME_${suffix}`
-  ),
+  // username: requiredVariable(
+  //   `TEST_USERNAME_${suffix}`
+  // ),
 
-  password: requiredVariable(
-    `TEST_PASSWORD_${suffix}`
-  ),
+  // password: requiredVariable(
+  //   `TEST_PASSWORD_${suffix}`
+   ),
 });
