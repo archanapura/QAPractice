@@ -58,10 +58,10 @@ pipeline
             steps
             {
                 echo 'Executing tests...'
-                bat'''
-                set UI_BASE_URL_LOCAL=https://www.qapractice.com/
-                npx playwright test
-                '''
+                withEnv(["UI_BASE_URL_LOCAL=${params.UI_BASE_URL_LOCAL}"]) {
+                    bat 'npx playwright test'
+                }
+                
             }
         }
         
