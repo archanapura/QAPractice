@@ -1,6 +1,22 @@
 pipeline
 {
     agent any
+    environment {
+        // Define any environment variables here if needed
+        TEST_ENV = 'qa'
+
+    }
+    parameters {
+        // string(name: 'UI_BASE_URL_LOCAL', defaultValue: 'https://www.qapractice.com/', description: 'Base URL for the application under test')
+
+        choice(name: 'UI_BASE_URL_LOCAL', defaultValue: 'https://www.qapractice.com/', description: 'Base URL for the application under test', choices: ['https://www.qapractice.com/', 'https://staging.qapractice.com/'])
+    }
+    options {
+        // Set a timeout for the entire pipeline (e.g., 30 minutes)
+        timeout(time: 30, unit: 'MINUTES')
+        // Discard old builds to save space
+        buildDiscarder(logRotator(numToKeepStr: '5'))
+    }
     stages
     {
         stage('cloning the project')
