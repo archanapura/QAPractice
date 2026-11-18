@@ -1,8 +1,62 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.055665">
-<testsuite name="ui\registration.spec.ts" timestamp="2026-11-17T11:06:51.968Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.997" errors="0">
-<testcase name="Register to the application" classname="ui\registration.spec.ts" time="4.997">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="25.727708000000003">
+<testsuite name="ui\registration.spec.ts" timestamp="2026-11-18T06:37:36.992Z" hostname="playwright-chromium-latest:Windows 11-browserstack" tests="1" failures="0" skipped="0" time="11.72" errors="0">
+<testcase name="Register to the application" classname="ui\registration.spec.ts" time="11.72">
 <system-out>
-<![CDATA[Clicked on practice button successfully
+<![CDATA[2026-11-18 12:07:41 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: 0b2d2d31-febf-494f-bedd-8d64faa69f12
+2026-11-18 12:07:41 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-11-18 12:07:42 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=13908:0, state=AutomationFrameworkState.CREATE
+2026-11-18 12:07:42 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=6dd596b5cf6a664f999ab660ee29bed0efbfa7c9632cb90be299f991ef752a9a target=13908:0
+2026-11-18 12:07:50 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-18 12:07:50 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-18 12:07:50 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-11-18 12:07:50 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-11-18 12:07:50 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-18 12:07:51 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-18 12:07:51 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-11-18 12:07:51 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-11-18 12:07:51 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+Clicked on practice button successfully
+2026-11-18 12:07:59 - [32minfo[39m: Automate test case execution has ended. Processing for accessibility testing is underway. 
+2026-11-18 12:07:59 - [33mwarn[39m: Not a valid Accessibility Automation session for playwright-page, cannot perform scan with retry.
+2026-11-18 12:07:59 - [33mwarn[39m: Not a valid Accessibility Automation session for playwright-page, cannot save accessibility results with retry.
+2026-11-18 12:07:59 - [32minfo[39m: Accessibility testing for this test case has ended.
+2026-11-18 12:08:00 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-11-18 12:08:00 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-18 12:08:00 - [32minfo[39m: [PlaywrightDriverModule] testId: d0536cdd17d6e3b61b4a-c37c3b45de123fae5143
+2026-11-18 12:08:00 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.64.1',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '08f1334d-f9eb-5e90-bc89-ca453e456b07',
+  test_result: 'pending',
+  automate_session_name: 'ui\\registration.spec.ts - Register to the application',
+  test_file_path: 'C:\\Users\\Archana\\Documents\\qaautomation\\tests\\ui\\registration.spec.ts',
+  test_id: 'd0536cdd17d6e3b61b4a-c37c3b45de123fae5143',
+  test_name: 'Register to the application',
+  test_location: 'C:\\Users\\Archana\\Documents\\qaautomation\\tests\\ui\\registration.spec.ts',
+  test_code: 'async ({\n' +
+    '  qaPracticePage,\n' +
+    '  masterlogin,\n' +
+    '  registerPage,\n' +
+    '  registerdata\n' +
+    '}) => {\n' +
+    '  await qaPracticePage.navigate();\n' +
+    '  await qaPracticePage.clickOnPracticeButton();\n' +
+    '  console.log("Clicked on practice button successfully");\n' +
+    '  await masterlogin.clickOnRegisterLink();\n' +
+    '  await registerPage.registeruser(registerdata.emailaddress, registerdata.password, registerdata.confirmPassword);\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-11-18T06:37:41.811Z',
+  test_scope: 'ui\\registration.spec.ts - Register to the application',
+  test_scopes: [],
+  test_rerun_name: ' playwright-chromium-latest:Windows 11-browserstack ui\\registration.spec.ts Register to the application'
+}
+2026-11-18 12:08:00 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-11-18 12:08:00 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-11-18 12:08:00 - [32minfo[39m: [PlaywrightDriverModule] markSessionStatusViaRestApi: PUT https://api.browserstack.com/automate/sessions/e4ba32c3b0f51b9d4466494a8f7706d601b74c5e.json status=passed name=ui\registration.spec.ts - Register to the application
 ]]>
 </system-out>
 </testcase>
