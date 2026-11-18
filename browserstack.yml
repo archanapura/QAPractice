@@ -1,0 +1,23 @@
+framework: playwright
+
+# userName: ${BROWSERSTACK_USERNAME}
+# accessKey: ${BROWSERSTACK_ACCESS_KEY} 
+
+projectName: QA Automation Framework
+buildName: Playwright First BrowserStack Build
+
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: playwright-chromium
+    browserVersion: latest
+
+  
+
+parallelsPerPlatform: 1
+
+browserstackLocal: false
+
+debug: true
+networkLogs: true
+video: true
