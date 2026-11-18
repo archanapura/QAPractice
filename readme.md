@@ -111,3 +111,15 @@ npm run test:report
   ```
 
   npx tsc --noEmit
+
+  #Execution on local system and browser stack from local system
+  ```bash
+$env:EXECUTION_MODE="browserstack"         
+$env:TEST_ENV="qa"
+npx browserstack-node-sdk playwright test
+
+$env:EXECUTION_MODE="local"                     
+$env:TEST_ENV="qa"          
+ npx playwright test 
+
+```
