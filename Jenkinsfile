@@ -6,7 +6,7 @@ pipeline
         // TEST_ENV = 'qa'
         UI_BASE_URL_QA='https://www.qapractice.com/'
         BROWSERSTACK_USERNAME= 'archanapura_2IujLg'
-        BROWSERSTACK_ACCESS_KEY 'okv8QXoeqJzaE1QnSxtp'
+        BROWSERSTACK_ACCESS_KEY='okv8QXoeqJzaE1QnSxtp'
 
     }
     parameters {
